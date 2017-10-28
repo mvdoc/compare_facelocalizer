@@ -1,0 +1,9 @@
+make_random_timing.py -num_runs 4                       \
+   -pre_stim_rest 10 -post_stim_rest 10                 \
+   -rand_post_stim_rest no                              \
+   -add_timing_class stim 1.5                           \
+   -add_timing_class rest 0 0.25 0.5                    \
+   -add_stim_class class 144 stim rest                  \
+   -show_timing_stats                                   \
+   -seed 31415 -prefix afni_rand_times    -run_time 276 \
+   -write_event_list events.txt
